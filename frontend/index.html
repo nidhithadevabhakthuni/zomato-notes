@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="top-nav">
+            <div class="nav-container">
+                <h1>📝 Zomato Notes</h1>
+                <div class="nav-links">
+                    <span class="nav-item">Dashboard</span>
+                    <span class="nav-item">Notes</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="app-container">
+            <!-- Sidebar with category tree -->
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <div id="category-tree"></div>
+                
+                <div class="quick-tags-section">
+                    <h4>Quick Tag Jump</h4>
+                    <div id="quick-tag-buttons"></div>
+                </div>
+            </aside>
+
+            <!-- Main content area -->
+            <section class="main-content">
+                <!-- Search and sort controls -->
+                <div class="search-controls">
+                    <div class="search-group">
+                        <input type="text" id="search-input" placeholder="Search notes by tag or title...">
+                        <select id="sort-select">
+                            <option value="relevance">Sort by: Relevance</option>
+                            <option value="date">Sort by: Date</option>
+                        </select>
+                    </div>
+                    
+                    <div class="smart-search-group">
+                        <input type="text" id="smart-search-input" placeholder="🔍 Smart Search (AI)..." style="margin-top: 10px;">
+                        <div id="smart-search-results" class="smart-results"></div>
+                    </div>
+                    
+                    <div class="lookup-group">
+                        <input type="text" id="lookup-input" placeholder="Jump to exact title...">
+                        <button id="lookup-btn">Jump</button>
+                        <span id="lookup-result"></span>
+                    </div>
+                </div>
+
+                <!-- Add Note Form -->
+                <div class="add-note-section">
+                    <h2>Add New Note</h2>
+                    <form id="add-note-form">
+                        <div class="form-group">
+                            <input type="text" id="note-title" placeholder="Title (max 120 chars)" maxlength="120">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="note-content" placeholder="Content" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="note-tag" placeholder="Tag">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="note-owner-id" placeholder="Owner ID" value="1">
+                        </div>
+                        <div id="form-error" class="error-message" style="display:none;"></div>
+                        <button type="submit">Add Note</button>
+                    </form>
+                </div>
+
+                <!-- Notes List -->
+                <div class="notes-section">
+                    <h2>Your Notes</h2>
+                    <div id="loading-message">Loading notes...</div>
+                    <div id="error-message" class="error-message" style="display:none;"></div>
+                    <div id="notes-list" class="notes-grid"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zomato Notes - On-Call Support Knowledge Base</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

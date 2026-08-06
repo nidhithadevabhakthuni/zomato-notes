@@ -1,0 +1,18 @@
+AI_SAMPLE_NOTES = [
+    {"owner_id": 2, "title": "Morning workout plan", "tag": "ai-demo",
+     "content": "Do 30 minutes of cardio followed by strength training focused on legs and core."},
+    {"owner_id": 2, "title": "Grocery list", "tag": "ai-demo",
+     "content": "Buy milk, eggs, spinach, chicken breast, and whole wheat bread for the week."},
+    {"owner_id": 2, "title": "Project deadline reminder", "tag": "ai-demo",
+     "content": "The backend API for the Zomato Notes capstone must be deployed and demoed by Friday."},
+    {"owner_id": 2, "title": "Book recommendation", "tag": "ai-demo",
+     "content": "A friend suggested reading a novel about a detective solving crimes in a coastal town."},
+    {"owner_id": 2, "title": "Recipe idea", "tag": "ai-demo",
+     "content": "Try making a vegetable stir fry with broccoli, bell peppers, and soy sauce tonight."},
+    {"owner_id": 2, "title": "Gym schedule change", "tag": "ai-demo",
+     "content": "Switch leg day to Thursday and move the rest day to Sunday this week."},
+    {"owner_id": 2, "title": "Meeting notes", "tag": "ai-demo",
+     "content": "Discussed the database schema for the notes app and agreed on using foreign keys for ownership."},
+    {"owner_id": 2, "title": "Weekend hiking trip", "tag": "ai-demo",
+     "content": "Plan a short hiking trip to a nearby trail, pack water bottles and snacks in advance."},
+]
